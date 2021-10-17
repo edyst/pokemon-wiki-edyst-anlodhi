@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:  Avenir-Next,Roboto,sans-serif;
+    font-size: 16px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+.brand{
+    margin-left: 20px;
+}
+nav{
+    position: absolute;
+    right: 150px;
+}
+
+.dropdown
+{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dropdown li
+{
+    display: block;
+    position: relative;
+    float: left;
+}
+
+.dropdown li ul
+{
+    display: none;
+}
+
+.dropdown li a 
+{
+    display: block;
+    text-decoration: none; 
+    color: #7f8c8d;
+    padding: 5px 15px 5px 15px;
+    margin-left: 1px;
+    white-space: nowrap;
+}
+
+.dropdown li a:hover 
+{
+    border: 1px solid #7f8c8d;
+    border-radius: 15px;
+}
+.dropdown li:hover ul 
+{
+    display: block;
+    position: absolute;
+    background-color: #4992ca;
+}
+
+.dropdown li:hover li
+{
+    float: none;
+    font-size: 11px;
+}
+li img{
+    margin-top: 8px;
+    margin-right: 5px;
+}
+
+#apply{
+    color: white;
+    background-color: coral;
+    height: 20px;
+    width: 130px;
+    border: none;
+    margin-right: 10px;
+}
+
+/* -----------HomePage-------------- */
+main{
+    margin-right: 10px;
+}
+.homepage{
+    background-image: url("bg-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-right: 20px;
+}
+.container{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    padding: 60px 0 0 100px;
+}
+
+.homepage h1{
+    font-size: 90px;
+}
+.homepage h3{
+font-size: 33px;
+}
+.homepage button{
+    margin-top: 20px;
+}
+.btn{
+    display: block;
+    user-select: none;
+    width: 200px;
+    height: 35px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.btn-blue{
+    background-color: #4992ca;
+    border: none;
+}
+.btn-transparent{
+    background-color: transparent;
+    height: 42px;
+    border: 2px solid white;
+}
+.btn-2{
+    height: 45px;
+    border-radius: 15px;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+/*------------Pocket Monsters Section----------*/
+.bg-blue{
+    background-color: #4992ca;
+    color: #fff;
+}
+.pocket-monsters{
+    text-align: center;
+    width: 98.7%;
+}
+.monstcard{
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+}
+.lev2head{
+   font-size: 45px;
+}
+.lev4head{
+   font-size: 40px;
+}
+.monstcard p,
+.monstcard div{
+margin-top: 20px;
+}
+.card-1{
+    display: flex;
+    margin: 20px auto;
+    padding-bottom: 60px;
+}
+.monstcard .lev4head{
+    margin-top: 40px;
+}
+.monstercard p{
+line-height: 2rem;
+}
+/*------ Statistics section -------*/
+.statistics{
+    text-align: center;
+    font-family: Avenir-Next,Roboto,sans-serif;
+}
+.statscontainer{
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+.statcard h4{
+font-size: 30px;
+}
+
+.statcard p{
+    margin: 30px 0;
+}
+
+/* ----------- pokemon-of-the-year -----------*/
+
+.pokemon-trainers{
+    padding: 20px 0;
+    width: 98.7%;
+}
+.pokemon-trainers h2{
+    text-align: center;
+    font-weight: 100;
+}
+.trainers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px 10rem;
+    column-gap: 20px;
+}
+.trainers h2{
+    margin: auto;
+    font-weight: 100;
+}
+.lev6head{
+    font-size: 18px;
+}
+/* Q and A */
+.qanda{
+    padding: 20px 0;
+}
+.qanda h2{
+    padding: 40px 0;
+} 
+.qanda p{
+    position: absolute;
+    padding-left: 9rem;
+}
+.qnalist{
+    list-style-position: inside;
+    text-align: left;
+    padding: 20px 11rem 40px 12rem;
+}
+.qnalist li{
+    margin-top: 15px;
+    padding-left: 5rem;
+}
+
+/*-------- Pokemon Battle -------*/
+.pokemonbattle{
+    padding: 20px 0;
+    width: 98.7%;
+}
+.pokemoncontent{
+    text-align: center;
+}
+.battlechart{
+    display: flex;
+    column-gap: 15px;
+    padding: 20px 16rem;
+    margin-top: 20px;
+    
+}
+.typechart{
+    flex: 1;
+}
+.battletable{
+    flex: 2;
+}
+.battletable h4{
+ margin-top: 15px;
+}
+.typechart p{
+    margin-top: 30px;
+    color: #8a8a8a;
+    line-height: 1.8rem;
+}
+
+td,
+th {
+  text-align: center;
+  padding: 12px;
+border: 1px solid #dddddd;
+}
+table{
+  border-collapse: collapse;
+  border: 1px solid #dddddd;
+}
+td{
+  color: #8a8a8a;
+}
+.battleticket{
+    color: #4992ca;
+    text-align: center;
+}
+.battleticket button{
+    margin: 20px auto;
+
+}
+
+/*------------------------------- Know More ---------------------*/
+.bg-gray{
+    background-color: #424242;
+    height: 250px;
+    color: #fff;
+}
+.knowmore{
+    padding: 20px 0;
+    width: 98.7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+/*-------------------------------- Pokemoncard ----------------------*/
+.pokemoncard-container{
+    text-align: center;
+    padding: 20px 0;
+    /* width: 98.7%; */
+}
+.pokemoncard-container h2{
+    color: #8a8a8a;
+}
+.pokemoncard {
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin: 8px;
+    line-height: 24px;
+    margin: 20px auto;
+  } 
+  .pokemoncard h2{
+      color: #8a8a8a;
+  }
+.pokemoncard-header{
+padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 16px solid #4992ca;
+}
+.pokemoncard-body{
+    padding: 20px;
+}
+
+/*------------ Pokemon-Traines ------------*/
+
+
+/*------------ Pokemon-Genration-card ------------*/
+.genration-card{
+    width: 98.7%;
+    padding: 20px 0;
+}
+.genration-card h2{
+    text-align: center;
+    padding-bottom: 20px;
+    color: #8a8a8a;
+}
+.card {
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin: 8px;
+    line-height: 24px;
+  }
+  
+  .card-sub-heading {
+    font-weight: 700;
+    height: 45px;
+    color: #3c3333;
+    text-align: left;
+    font-size: 2rem;
+    padding-bottom: 2em;
+  }
+  
+  .card-body {
+    padding: 10px;
+    line-height: 2rem;
+  }
+  
+  .card-header {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 16px solid #4992ca;
+    padding: 20px;
+  }
+  .cards_container{
+    display: flex;
+    justify-content: center;
+  }
+
+  /*-------------------- pokemon-channel ---------*/
+  .pokemonchannel{
+      width: 98.7%;
+      padding: 20px 0;
+      text-align: center;
+      line-height: 9rem;
+  }
+  .pokemonchannel form{
+      display: flex;
+      justify-content: center;
+      column-gap: 5px;
+  }
+  input[type="email"]{
+      width: 300px;
+  }
+
+  /*---------- Pokemon-Game --------*/
+.pokemon-games{
+    width: 98.7%;
+    text-align: center;
+    padding: 20px 0;
+    line-height: 3rem;
+}
+.pokemon-games button{
+    margin: auto;
+    margin-top: 15px;
+}
+.games-container{
+    line-height: 1.5rem;
+    display: flex;
+    margin: 30px auto;
+    width: 70%;
+}
+
+/*-------------------------- Designer ------------------*/
+.designer{
+    width: 98.7%;
+    text-align: center;
+    padding: 20px 0;
+}
+.designer img{
+    border-radius: 50%;
+    height: 200px;
+}
+.designer-container{
+    display: flex;
+    line-height: 22px;
+    width: 80%;
+    margin: auto;
+    margin-top: 25pX;
+}
+.designer-container p:last-of-type{
+    margin-top: 10px;
+}
+
+/*-------------- Logos -----------*/
+.logo-section{
+    width: 98.7%;
+    padding: 20px 0;
+    text-align: center;
+}
+.logo img{
+    margin: 5px 8rem;
+}
+/*-------------- Logos -----------*/
+footer{
+    margin-right: 10px;
+    width: 98.1%;
+    padding: 20px 0;
+    background-color: #00121B;  
+    color: #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    line-height: 30px;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
